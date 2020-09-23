@@ -19,4 +19,4 @@ see current weather and five day forcast in city.
 
 Screen Shot
 -------------------------------------------------------------------------------
-![](assets\weather-Dashboard-png.PNG)
+<img src= "assets\weather-Dashboard-png.PNG">
