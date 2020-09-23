@@ -36,7 +36,7 @@
 
     // gets current forecast for selected city and calls uv index function
     function getCurrentWeather(thisCity, id) {
-        var weatherURL = "http://api.openweathermap.org/data/2.5/weather?q="+ thisCity + "&appid=" + id;
+        var weatherURL = "https://api.openweathermap.org/data/2.5/weather?q="+ thisCity + "&units=imperial&appid=" + id;
         var cityLat;
         var cityLong;
 
@@ -63,7 +63,7 @@
 
     // gets 5 day forecast for selected city
     function getForecast(thisCity, id) {
-        var forecastURL = "http:api.openweathermap.org/data/2.5/forecast?q="+ thisCity + "&appid=" + id;
+        var forecastURL = "http:api.openweathermap.org/data/2.5/forecast?q="+ thisCity + "&units=imperial&appid=" + id;
 
         $.ajax({
             url: forecastURL,
@@ -120,7 +120,7 @@
     // submit event that loads new data
     $("form").on("submit", function (event) {
         event.preventDefault();
-        console.log("im here!")
+        console.log("Location")
         var newCity = $("#citySearchInput").val().trim();
         cityList.push(newCity);
         createCityList();
