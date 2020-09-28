@@ -64,7 +64,7 @@ function getCurrentWeather(thisCity, id) {
 
 // gets 5 day forecast for selected city
 function getForecast(thisCity, id) {
-    var forecastURL = "http:api.openweathermap.org/data/2.5/forecast?q=" + thisCity + "&units=imperial&appid=" + id;
+    var forecastURL = "https:api.openweathermap.org/data/2.5/forecast?q=" + thisCity + "&units=imperial&appid=" + id;
 
     $.ajax({
         url: forecastURL,
